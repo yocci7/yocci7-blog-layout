@@ -50,7 +50,7 @@ mark {
   background-color: #ff9;
   color: #000;
   font-style: italic;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 del {
@@ -71,7 +71,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1pxsolid #ccc;
+  border-top: 1pxsolid #cccccc;
   margin: 1em0;
   padding: 0;
 }
@@ -206,10 +206,6 @@ body {
   border: none;
   border-radius: 8px;
 }
-.main .sidebar__article__filter button.active {
-  background-color: #000;
-  color: #fff;
-}
 .main .sidebar__article__filter button:hover {
   cursor: pointer;
   background-color: #000;
@@ -304,14 +300,12 @@ body {
 .main .article__section__text {
   display: flexbox;
 }
-.main .article__section__text__text--title {
+.main .article__section__text__title {
   margin-top: 10px;
   text-align: center;
   font-size: 20px;
 }
-.main .article__section__text__text--discription {
+.main .article__section__text__discription {
   text-align: center;
   margin-top: 10px;
-}
-
-/*# sourceMappingURL=app.css.map */
+}/*# sourceMappingURL=app.css.map */
