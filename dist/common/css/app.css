@@ -201,6 +201,7 @@ body {
 }
 .main .sidebar__article__filter button {
   background-color: #fff;
+  color: #000;
   font-size: 12px;
   padding: 10px 15px;
   border: none;
