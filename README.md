@@ -1,7 +1,7 @@
 # yocci_blog
 
 
-C:.  
+[C:.  
 │  .editorconfig  
 │  .gitignore  
 │  README.md  
@@ -56,5 +56,5 @@ C:.
         │  
         └─var  
                 _mixin.scss  
-                _var.scss  
+                _var.scss ](url) 
 
