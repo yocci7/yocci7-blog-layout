@@ -1,7 +1,8 @@
 # yocci_blog
 
 
-<!-- C:.
+<!--
+C:.
 │  .editorconfig
 │  .gitignore
 │  README.md
@@ -56,5 +57,6 @@
         │
         └─var
                 _mixin.scss
-                _var.scss -->
+                _var.scss
 
+ -->
