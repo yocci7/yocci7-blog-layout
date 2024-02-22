@@ -26,29 +26,34 @@
       width: 256px;
       height: 234px;
       background-color: #fff;
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5019607843);
+      box-shadow: 5px 5px 15px #00000080;
       border-radius: 25px;
       margin: 17px;
+
       &:hover {
         cursor: pointer;
-        box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5019607843);
+        box-shadow: 10px 15px 15px #00000080;
         opacity: 0.8;
         transition: 0.3s;
       }
+
       &__img {
         width: 256px;
         height: 144px;
         opacity: 1;
         border-radius: 25px 25px 0 0;
       }
+
       &__text {
         display: flexbox;
         width: 256px;
+
         &__title {
           margin-top: 10px;
           text-align: center;
           font-size: 20px;
         }
+
         &__discription {
           margin: 10px 20px;
           text-align: center;

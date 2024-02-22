@@ -1,6 +1,6 @@
 # yocci_blog
 
-<!--
+
 C:.
 │  .editorconfig
 │  .gitignore
@@ -16,6 +16,8 @@ C:.
 │  │  ├─css
 │  │  │      app.css
 │  │  │      app.css.map
+│  │  │      article.css
+│  │  │      article.css.map
 │  │  │
 │  │  └─js
 │  ├─img
@@ -25,6 +27,12 @@ C:.
 │          contact.html
 │
 └─src
+    ├─original_css
+    │      app.original.css
+    │      app.original.css.map
+    │      article.original.css
+    │      article.original.css.map
+    │
     ├─pug
     │  │  index.pug
     │  │
@@ -42,14 +50,11 @@ C:.
         │      _footer.scss
         │      _header.scss
         │      _sidebar.scss
-        │      
-        ├─object
-        │  ├─component
-        │  ├─project
-        │  │      _article.scss
-        │  │
-        │  └─utility
+        │
+        ├─project
+        │      article.scss
+        │
         └─var
                 _mixin.scss
                 _var.scss
--->
+
