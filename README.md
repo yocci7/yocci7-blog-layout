@@ -1,5 +1,6 @@
 # yocci_blog
 
+<!--
 YOCCI_ii BLOG:.
 │  .editorconfig
 │  README.md
@@ -43,3 +44,4 @@ YOCCI_ii BLOG:.
             ├─component
             ├─project
             └─utility
+-->
