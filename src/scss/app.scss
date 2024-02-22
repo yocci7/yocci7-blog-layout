@@ -6,10 +6,5 @@
 
 // layout
 @use "./layout/header";
-@use "./layout/footer";
 @use "./layout/sidebar";
-
-//objects
-@use "./object/project/article"
-
-// pages
+@use "./layout/footer";

@@ -1,5 +1,5 @@
-@use "../../var/var";
-@use "../../var/mixin";
+@use "../var/var";
+@use "../var/mixin";
 
 .main {
   display: flex;
@@ -50,8 +50,10 @@
           font-size: 20px;
         }
         &__discription {
+          margin: 10px 20px;
           text-align: center;
-          margin-top: 10px;
+          font-size: 14px;
+          line-height: 20px;
         }
       }
     }

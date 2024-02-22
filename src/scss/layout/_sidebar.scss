@@ -3,14 +3,18 @@
   margin-left: 2%;
   min-width: 350px;
 
+
   &__search {
     display: flex;
+    position: fixed;
+    top: 102px;
 
     &__input {
       width: 230px;
       height: 50px;
       border-radius: 20px;
       font-size: 20px;
+      background-color: #fff;
       border: 1px solid #000;
       text-align: center;
     }
@@ -39,6 +43,8 @@
 
   &__article__filter {
     margin: 5px 0;
+    position: fixed;
+    top: 155.6px;
 
     &__name {
       font-size: 20px;
@@ -68,6 +74,8 @@
     width: 305px;
     height: auto;
     border-radius: 20px;
+    position: fixed;
+    top: 229.6px;
 
     &__caption {
       font-size: 25px;
