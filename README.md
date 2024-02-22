@@ -2,9 +2,9 @@
 
 
 C:.
-│  .editorconfig
-│  .gitignore
-│  README.md
+│  .editorconfig  
+│  .gitignore  
+│  README.md  
 │
 ├─.vscode
 │      settings.json
