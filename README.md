@@ -1,7 +1,7 @@
 # yocci_blog
 
 
-C:.
+C:.  
 │  .editorconfig  
 │  .gitignore  
 │  README.md  
