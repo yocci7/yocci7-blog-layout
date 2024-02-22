@@ -1,8 +1,9 @@
 # yocci_blog
 
 <!--
-YOCCI_ii BLOG:.
+C:.
 │  .editorconfig
+│  .gitignore
 │  README.md
 │
 ├─.vscode
@@ -32,16 +33,23 @@ YOCCI_ii BLOG:.
     │
     └─scss
         │  app.scss
-        │  _fonts.scss
-        │  _index.scss
-        │  _mixin.scss
-        │  _reset.scss
-        │  _var.scss
         │
         ├─foundation
+        │      _base.scss
+        │      _reset.scss
+        │
         ├─layout
-        └─object
-            ├─component
-            ├─project
-            └─utility
+        │      _footer.scss
+        │      _header.scss
+        │      _sidebar.scss
+        │      
+        ├─object
+        │  ├─component
+        │  ├─project
+        │  │      _article.scss
+        │  │
+        │  └─utility
+        └─var
+                _mixin.scss
+                _var.scss
 -->
