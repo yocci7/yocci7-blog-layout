@@ -1,4 +1,15 @@
 @charset "UTF-8";
-@use "_reset";
-@use "_fonts";
-@use "_index";
+
+// foundation
+@use "./foundation/reset";
+@use "./foundation/base";
+
+// layout
+@use "./layout/header";
+@use "./layout/footer";
+@use "./layout/sidebar";
+
+//objects
+@use "./object/project/article"
+
+// pages

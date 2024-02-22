@@ -1,0 +1,62 @@
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  &__nav {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+
+    &__logo {
+      background-color: #eec968;
+      height: 50px;
+      padding: 10px 0;
+      margin: 0 auto 0 auto;
+      font-size: 2rem;
+      font-weight: bold;
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+
+    &__ul {
+      margin-bottom: 50px;
+      margin: 16px;
+
+      &__li {
+        display: inline-block;
+        margin: 0 26px;
+        font-size: 20px;
+      }
+      &__li a {
+        text-decoration-line: none;
+        color: #444444;
+        display: inline-block;
+        position: relative;
+      }
+      &__li a::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 50%;
+        top: 120%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background: #444444;
+        transition: all 0.5s ease 0s;
+      }
+      &__li a:hover {
+        cursor: pointer;
+        color: #000;
+      }
+      &__li a:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
