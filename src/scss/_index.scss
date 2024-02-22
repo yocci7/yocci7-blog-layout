@@ -16,7 +16,7 @@ body {
     text-align: center;
 
     &__logo {
-      background-color: #EEC968;
+      background-color: #eec968;
       height: 50px;
       padding: 10px 0;
       margin: 0 auto 0 auto;
@@ -137,7 +137,7 @@ body {
       }
     }
 
-    &__links {
+    &__link {
       width: 305px;
       height: auto;
       border-radius: 20px;
@@ -202,18 +202,12 @@ body {
       display: none;
     }
 
-    &__filter {
-      margin-bottom: 50px;
-      width: 250px;
-      height: 26px;
-      background-color: #000;
-    }
-
     &__section {
-      width: 270px;
-      height: 240px;
+      width: 256px;
+      height: 234px;
       background-color: #fff;
       box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5019607843);
+      border-radius: 25px;
       margin: 17px;
 
       &:hover {
@@ -223,12 +217,14 @@ body {
         transition: 0.3s;
       }
       &__img {
-        width: 270px;
-        height: 135.5px;
+        width: 256px;
+        height: 144px;
         opacity: 1;
+        border-radius: 25px 25px 0 0;
       }
       &__text {
         display: flexbox;
+        width: 256px;
 
         &__title {
           margin-top: 10px;
