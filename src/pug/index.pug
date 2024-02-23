@@ -15,6 +15,9 @@ html
     //- JS
     script(src="./common/js/script.js")
 
+    //- FAVICON
+
+
     //-  FONTAWESOME
     script(src="https://kit.fontawesome.com/7358297ab3.js" crossorigin="anonymous")
 
@@ -47,20 +50,16 @@ html
         //- FILTER
         .sidebar__article__filter
           p.sidebar__article__filter__name Filter
-          button.sidebar__article__filter__button(data-name="all") All
-          button.sidebar__article__filter__button(data-name="programing") Programing
+          button.sidebar__article__filter__button All
+          button.sidebar__article__filter__button Programing
           button.sidebar__article__filter__button(data-name="minecraft") Minecraft
           button.sidebar__article__filter__button(data-name="other") Other
 
         //- LINK
         .sidebar__link
           //- 1
-          p.sidebar__link__caption hogehoge
+          p.sidebar__link__caption
           ul.sidebar__link__ul
-            li.sidebar__link__li
-              a(href="#") hoge
-            li.sidebar__link__li
-              a(href="#") hoge
             li.sidebar__link__li
               a(href="#") hoge
             li.sidebar__link__li
@@ -69,7 +68,7 @@ html
               a(href="#") hoge
 
           //- 2
-          p.sidebar__link__caption hogehoge
+          p.sidebar__link__caption
           ul.sidebar__link__ul
             li.sidebar__link__li
               a(href="#") hoge
@@ -78,177 +77,175 @@ html
             li.sidebar__link__li
               a(href="#") hoge
             li.sidebar__link__li
+
+          //- 3
+          p.sidebar__link__caption
+          ul.sidebar__link__ul
+            li.sidebar__link__li
               a(href="#") hoge
             li.sidebar__link__li
               a(href="#") hoge
+            li.sidebar__link__li
+              a(href="#") hoge
+            li.sidebar__link__li
+
+          //- 4
+          p.sidebar__link__caption
+          ul.sidebar__link__ul
+            li.sidebar__link__li
+              a(href="#") hoge
+            li.sidebar__link__li
+              a(href="#") hoge
+            li.sidebar__link__li
+              a(href="#") hoge
+            li.sidebar__link__li
+
 
       //- ARTICLE
       article.article
 
         //- 24
-        section.article__section(data-name="all")
-          img.article__section__img(src="" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        a.article__link(href="http://google.com")
+          section.article__link__section
+            img.article__link__section__img(src="./img/pug_sass.png" alt="")
+            .article__link__section__text
+              h4.article__link__section__text__title Pug Sass Tutorial
+              p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 23
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 22
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 21
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 20
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 19
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 18
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 17
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 16
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 15
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 14
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 13
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 12
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 11
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 10
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 9
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 8
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 7
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 6
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 5
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 4
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 3
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 2
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
         //- 1
-        section.article__section(data-name="all")
-          img.article__section__img(src="./img/pug_sass.png" alt="")
-          .article__section__text
-            h4.article__section__text__title Pug Sass Tutorial
-            p.article__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        section.article__link__section
+          img.article__link__section__img(src="./img/pug_sass.png" alt="")
+          .article__link__section__text
+            h4.article__link__section__text__title Pug Sass Tutorial
+            p.article__link__section__text__discription Lorem ipsum dolor sit amet consectetur adipisicing elit.

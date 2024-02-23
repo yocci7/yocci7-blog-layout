@@ -172,6 +172,7 @@ body {
   border-radius: 10px;
   background-color: #fff;
   border: 1px solid black;
+  transition: all 0.3s;
 }
 .sidebar__search__button .fa-magnifying-glass {
   display: flex;
@@ -182,7 +183,7 @@ body {
   cursor: pointer;
   background-color: #000;
   color: #fff;
-  transition: 0.2s;
+  transition: all 0.5s;
 }
 .sidebar__article__filter {
   margin: 5px 0;
@@ -203,12 +204,13 @@ body {
   padding: 10px 15px;
   border: none;
   border-radius: 8px;
+  transition: all 0.3s;
 }
 .sidebar__article__filter button:hover {
   cursor: pointer;
   background-color: #000;
   color: #fff;
-  transition: 0.6s;
+  transition: all 0.6s;
 }
 .sidebar__link {
   width: 305px;
@@ -219,22 +221,25 @@ body {
 }
 .sidebar__link__caption {
   font-size: 25px;
+  margin: 10px 0;
+  left: 25px;
   font-weight: bold;
   position: relative;
-  margin: 10px;
-  left: 15px;
 }
 .sidebar__link__ul {
   list-style: none;
+  margin: 0 0 20px;
 }
 .sidebar__link__ul a {
   text-decoration-line: none;
   color: #444444;
   display: inline-block;
-  position: relative;
-  font-size: 20px;
+  font-size: 25px;
   margin: 10px;
   left: 15px;
+  font-weight: bold;
+  position: relative;
+  transition: 0.5s ease 0s;
 }
 .sidebar__link__ul a::after {
   position: absolute;
@@ -251,6 +256,7 @@ body {
 .sidebar__link__ul a:hover {
   color: #000;
   cursor: pointer;
+  transition: all 0.5s;
 }
 .sidebar__link__ul a:hover::after {
   width: 100%;

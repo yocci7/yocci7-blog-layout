@@ -3,7 +3,6 @@
   margin-left: 2%;
   min-width: 350px;
 
-
   &__search {
     display: flex;
     position: fixed;
@@ -26,6 +25,7 @@
       border-radius: 10px;
       background-color: #fff;
       border: 1px solid black;
+      transition: all 0.3s;
 
       & .fa-magnifying-glass {
         display: flex;
@@ -36,7 +36,7 @@
         cursor: pointer;
         background-color: #000;
         color: #fff;
-        transition: 0.2s;
+        transition: all 0.5s;
       }
     }
   }
@@ -60,12 +60,13 @@
       padding: 10px 15px;
       border: none;
       border-radius: 8px;
+      transition: all 0.3s;
 
       &:hover {
         cursor: pointer;
         background-color: #000;
         color: #fff;
-        transition: 0.6s;
+        transition: all 0.6s;
       }
     }
   }
@@ -79,41 +80,49 @@
 
     &__caption {
       font-size: 25px;
+      margin: 10px 0;
+      left: 25px;
       font-weight: bold;
       position: relative;
-      margin: 10px;
-      left: 15px;
     }
     &__ul {
       list-style: none;
+      margin: 0 0 20px;
 
       a {
         text-decoration-line: none;
         color: #444444;
         display: inline-block;
-        position: relative;
-        font-size: 20px;
+        font-size: 25px;
         margin: 10px;
         left: 15px;
-      }
-      a::after {
-        position: absolute;
-        content: "";
-        bottom: 0;
-        left: 50%;
-        top: 120%;
-        transform: translateX(-50%);
-        width: 0;
-        height: 2px;
-        background: #000;
+        font-weight: bold;
+        position: relative;
         transition: .5s ease 0s;
-      }
-      a:hover {
-        color: #000;
-        cursor: pointer;
-      }
-      a:hover::after {
-        width: 100%;
+
+        &::after {
+          position: absolute;
+          content: "";
+          bottom: 0;
+          left: 50%;
+          top: 120%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 2px;
+          background: #000;
+          transition: .5s ease 0s;
+        }
+        &:hover {
+          color: #000;
+          cursor: pointer;
+          // margin: 20px;
+          transition: all .5s;
+
+
+          &::after {
+            width: 100%;
+          }
+        }
       }
     }
   }
