@@ -9,7 +9,7 @@
     padding: 0;
     text-align: center;
 
-    &__logo {
+    &__top {
       background-color: #eec968;
       height: 50px;
       padding: 10px 0;
@@ -21,6 +21,13 @@
         text-decoration: none;
         color: #000;
       }
+
+      &__logo {
+        width: 223px;
+        height: 42px;
+        position: relative;
+        bottom: 5px;
+      }
     }
 
     &__ul {
@@ -30,7 +37,9 @@
       &__li {
         display: inline-block;
         margin: 0 26px;
-        font-size: 20px;
+        font-size: 18px;
+        font-weight: 600;
+
 
         & a {
           text-decoration-line: none;
@@ -42,13 +51,13 @@
             position: absolute;
             content: "";
             bottom: 0;
-            left: 50%;
+            left: 0%;
             top: 120%;
-            transform: translateX(-50%);
+            transform: translateX(0%);
             width: 0;
             height: 2px;
-            background: #444444;
-            transition: all 0.5s ease 0s;
+            background: #000;
+            transition: all 0.3s ease 0s;
           }
           &:hover {
             cursor: pointer;

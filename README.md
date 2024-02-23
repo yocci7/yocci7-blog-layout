@@ -1,15 +1,14 @@
 # yocci_blog
 
-
-<!--
-C:.
+<!-- <!-- -->
+YOCCI_ii7_BLOG:.
 │  .editorconfig
 │  .gitignore
 │  README.md
-│
+│  
 ├─.vscode
 │      settings.json
-│
+│      
 ├─dist
 │  │  index.html
 │  │
@@ -22,11 +21,13 @@ C:.
 │  │  │
 │  │  └─js
 │  ├─img
+│  │      logo.png
 │  │      pug_sass.png
 │  │
+│  ├─js
+│  │      article_filter.js
+│  │
 │  └─page
-│          contact.html
-│
 └─src
     ├─original_css
     │      app.original.css
@@ -58,5 +59,4 @@ C:.
         └─var
                 _mixin.scss
                 _var.scss
-
- -->
+ <!-- --> -->
