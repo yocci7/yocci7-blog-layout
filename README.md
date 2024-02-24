@@ -1,7 +1,7 @@
 # yocci_blog
 
 <!-- <!-- -->
-YOCCI_ii7_BLOG:.
+C:.
 │  .editorconfig
 │  .gitignore
 │  README.md
@@ -22,12 +22,19 @@ YOCCI_ii7_BLOG:.
 │  │  └─js
 │  ├─img
 │  │      logo.png
+│  │      ogp.png
 │  │      pug_sass.png
 │  │
-│  ├─js
-│  │      article_filter.js
-│  │
 │  └─page
+│      ├─about
+│      │      index.html
+│      │
+│      ├─contact
+│      │      index.html
+│      │
+│      └─news
+│              index.html
+│
 └─src
     ├─original_css
     │      app.original.css
@@ -38,9 +45,22 @@ YOCCI_ii7_BLOG:.
     ├─pug
     │  │  index.pug
     │  │
-    │  └─page
-    │          contact.pug
-    │
+    │  ├─page
+    │  │  ├─about
+    │  │  │      index.pug
+    │  │  │
+    │  │  ├─contact
+    │  │  │      index.pug
+    │  │  │
+    │  │  └─news
+    │  │          index.pug
+    │  │
+    │  ├─_include
+    │  │      _footer.pug
+    │  │      _header.pug
+    │  │
+    │  ├─_layout
+    │  └─_var
     └─scss
         │  app.scss
         │

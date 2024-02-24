@@ -1,12 +1,14 @@
-//- pug -w ./src/pug -o ./dist -P
+//- find ./src/pug -type f -name '*.pug' | grep -v '/_' | xargs pug -w -o ./dist -P
 doctype html
 html(lang="ja")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+  head(prefix="og: https://-ogp.me/ns#")
+    include ./_include/_head.pug
 
     //- TITLE
-    title YOCCI_ii BLOG
+    title YOCCI_ii7 BLOG
+
+    //- DISCRIPTION
+    meta(name="description" content="このサイトは、プログラミング初心者の主が学習したプログラミング知識やMinecraftの自作Modやを記事にまとめて公開しているサイトです。")
 
     //- CSS
     link(rel="stylesheet", href="./common/css/app.css")
@@ -14,100 +16,20 @@ html(lang="ja")
 
     //- JS
     script(src="./common/js/script.js")
-    script(async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7672438019900336" crossorigin="anonymous")
-
-    //- FAVICON
-
-
-    //-  FONTAWESOME
-    script(src="https://kit.fontawesome.com/7358297ab3.js" crossorigin="anonymous")
 
   body
     //- HEADER
-    header.header
-      nav.header__nav
-        h2.header__nav__top
-          a(href="./index.html")
-            img.header__nav__top__logo(src="./img/logo.png", alt="")
-        ul.header__nav__ul
-          li.header__nav__ul__li
-            a(href="./index.html") HOME
-          li.header__nav__ul__li
-            a(href="./page/about.html") ABOUT
-          li.header__nav__ul__li
-            a(href="./page/news.html") NEWS
-          li.header__nav__ul__li
-            a(href="./page/contact.html") CONTACT
+    include ./_include/_header.pug
 
     //- MAIN
     main.main
       //- SIDE_BAR
-      .sidebar
-        //- SEARCH_BOX
-        .sidebar__search
-          input.sidebar__search__input(placeholder="Search")
-          .sidebar__search__button
-            i(class="fa-solid fa-magnifying-glass fa-lg")
-
-        //- FILTER
-        .sidebar__article__filter
-          p.sidebar__article__filter__name Filter
-          button.sidebar__article__filter__button All
-          button.sidebar__article__filter__button Programing
-          button.sidebar__article__filter__button(data-name="minecraft") Minecraft
-          button.sidebar__article__filter__button(data-name="other") Other
-
-        //- LINK
-        .sidebar__link
-          //- 1
-          p.sidebar__link__caption
-          ul.sidebar__link__ul
-            li.sidebar__link__li
-              a(href="#") hoge
-            li.sidebar__link__li
-              a(href="#") hoge
-            li.sidebar__link__li
-              a(href="#") hoge
-
-          //- 2
-          p.sidebar__link__caption
-          ul.sidebar__link__ul
-            li.sidebar__link__li
-              a(href="#") hoge
-            li.sidebar__link__li
-              a(href="#") hoge
-            li.sidebar__link__li
-              a(href="#") hoge
-            li.sidebar__link__li
-
-          //- 3
-          p.sidebar__link__caption
-          ul.sidebar__link__ul
-            li.sidebar__link__li
-              a(href="#") hoge
-            li.sidebar__link__li
-              a(href="#") hoge
-            li.sidebar__link__li
-              a(href="#") hoge
-            li.sidebar__link__li
-
-          //- 4
-          p.sidebar__link__caption
-          ul.sidebar__link__ul
-            li.sidebar__link__li
-              a(href="#") hoge
-            li.sidebar__link__li
-              a(href="#") hoge
-            li.sidebar__link__li
-              a(href="#") hoge
-            li.sidebar__link__li
-
+      include ./_include/_sidebar.pug
 
       //- ARTICLE
       article.article
-
         //- 1
-        a.article__link(href="./page/contact.html")
+        a.article__link(href="https://google.com")
           section.article__link__section
             img.article__link__section__img(src="./img/pug_sass.png" alt="")
             .article__link__section__text
@@ -116,7 +38,7 @@ html(lang="ja")
               p.article__link__section__text__dataPublished 2024/02/23
 
         //- 1
-        a.article__link(href="./page/contact.html")
+        a.article__link(href="https://google.com")
           section.article__link__section
             img.article__link__section__img(src="./img/pug_sass.png" alt="")
             .article__link__section__text
@@ -125,7 +47,7 @@ html(lang="ja")
               p.article__link__section__text__dataPublished 2024/02/23
 
         //- 1
-        a.article__link(href="./page/contact.html")
+        a.article__link(href="https://google.com")
           section.article__link__section
             img.article__link__section__img(src="./img/pug_sass.png" alt="")
             .article__link__section__text
@@ -134,7 +56,7 @@ html(lang="ja")
               p.article__link__section__text__dataPublished 2024/02/23
 
         //- 1
-        a.article__link(href="./page/contact.html")
+        a.article__link(href="https://google.com")
           section.article__link__section
             img.article__link__section__img(src="./img/pug_sass.png" alt="")
             .article__link__section__text
@@ -143,7 +65,7 @@ html(lang="ja")
               p.article__link__section__text__dataPublished 2024/02/23
 
         //- 1
-        a.article__link(href="./page/contact.html")
+        a.article__link(href="https://google.com")
           section.article__link__section
             img.article__link__section__img(src="./img/pug_sass.png" alt="")
             .article__link__section__text
@@ -152,7 +74,7 @@ html(lang="ja")
               p.article__link__section__text__dataPublished 2024/02/23
 
         //- 1
-        a.article__link(href="./page/contact.html")
+        a.article__link(href="https://google.com")
           section.article__link__section
             img.article__link__section__img(src="./img/pug_sass.png" alt="")
             .article__link__section__text
@@ -161,7 +83,7 @@ html(lang="ja")
               p.article__link__section__text__dataPublished 2024/02/23
 
         //- 1
-        a.article__link(href="./page/contact.html")
+        a.article__link(href="https://google.com")
           section.article__link__section
             img.article__link__section__img(src="./img/pug_sass.png" alt="")
             .article__link__section__text

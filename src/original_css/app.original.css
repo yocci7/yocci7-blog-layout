@@ -20,7 +20,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-navul {
+nav ul {
   list-style: none;
 }
 
@@ -82,7 +82,7 @@ input, select {
 }
 
 html {
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 body {
@@ -90,12 +90,12 @@ body {
   height: 100vh;
   font-family: "Roboto", sans-serif;
   background-color: #fff;
-  position: relative;
   overflow-x: hidden;
 }
 
-.header__nav__ul__li a {
-  font-family: Montserrat, sans-serif;
+.main {
+  display: flex;
+  position: relative;
 }
 
 .header {
@@ -138,6 +138,7 @@ body {
   font-weight: 600;
 }
 .header__nav__ul__li a {
+  font-family: Montserrat, sans-serif;
   text-decoration-line: none;
   color: #444444;
   display: inline-block;

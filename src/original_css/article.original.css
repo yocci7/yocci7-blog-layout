@@ -1,9 +1,5 @@
 @charset "UTF-8";
-.main {
-  display: flex;
-  position: relative;
-}
-.main .article {
+.article {
   flex: 1 1 70%;
   margin-right: 2%;
   display: flex;
@@ -18,13 +14,13 @@
   scrollbar-width: none;
   /* Chrome, Safari 対応 */
 }
-.main .article::-webkit-scrollbar {
+.article::-webkit-scrollbar {
   display: none;
 }
-.main .article__link {
+.article__link {
   text-decoration: none;
 }
-.main .article__link__section {
+.article__link__section {
   width: 256px;
   height: 244px;
   background-color: #fff;
@@ -33,37 +29,37 @@
   margin: 17px;
   transition: all 0.3s;
 }
-.main .article__link__section:hover {
+.article__link__section:hover {
   cursor: pointer;
   box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5019607843);
   opacity: 0.8;
   transition: all 0.3s;
 }
-.main .article__link__section__img {
+.article__link__section__img {
   width: 256px;
   height: 144px;
   opacity: 1;
   border-radius: 25px 25px 0 0;
 }
-.main .article__link__section__text {
+.article__link__section__text {
   display: flexbox;
   position: absolute;
   width: 256px;
   text-decoration: none;
   color: #000;
 }
-.main .article__link__section__text__headline {
+.article__link__section__text__headline {
   margin-top: 8px;
   text-align: center;
   font-size: 20px;
 }
-.main .article__link__section__text__discription {
+.article__link__section__text__discription {
   margin: 5px 20px 0;
   text-align: center;
   font-size: 15px;
   line-height: 20px;
 }
-.main .article__link__section__text__dataPublished {
+.article__link__section__text__dataPublished {
   font-size: 12px;
   margin-top: 5px;
   position: relative;
