@@ -1,27 +1,29 @@
+// webpack.config.js
+
 module.exports = {
   entry: {
     bundle: "./src/ts/app.ts",
   },
   output: {
-    path: `${__dirname}/dist/common/ts`,
-    filename: "[bundle.js]",
+    path: `${__dirname}/dist/common/js`,
+    filename: "bundle.js",
   },
   mode: "development",
   // mode: "production",
   resolve: {
-    ectensions: [".ts", ".js"],
+    extensions: ['.js', '.ts', '.jsx', '.json'],
   },
   devServer: {
     static: {
-      directory: `${__dirname}/dist`
+      directory: `${__dirname}/dist`,
     },
     open: true,
   },
   module: {
     rules: [
       {
-      test: /\.ts$/,
-      loader: "ts-loader",
+        test: /\.ts$/,
+        loader: "ts-loader",
       },
     ],
   },

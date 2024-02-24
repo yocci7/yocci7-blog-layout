@@ -1,1 +1,1 @@
-import Saysomething from "./saySomething";
+console.log("HELLO TYPESCRIPT!")
