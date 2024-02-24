@@ -1,5 +1,6 @@
-[# YOCCI_ii7 BLOG](https://yocci7-blog.vercel.app)
+# YOCCI_ii7 BLOG
 
+[link](https://yocci7-blog.vercel.app)
 
 ### 開発用メモ
 
