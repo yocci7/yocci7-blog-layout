@@ -5,6 +5,10 @@
 
 #### Pug Watch
 ```bash
+# 公開用(圧縮)
+$ find ./src/pug -type f -not -path '*/_*' -name '*.pug' -exec pug -w {} -o ./dist \; & pug -w ./src/pug/page -o ./dist/page
+
+# 開発用
 $ find ./src/pug -type f -not -path '*/_*' -name '*.pug' -exec pug -w {} -o ./dist -P \; & pug -w ./src/pug/page -o ./dist/page -P
 ```
 

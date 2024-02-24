@@ -17,7 +17,8 @@ module.exports = {
     static: {
       directory: `${__dirname}/dist`,
     },
-    open: true,
+    open: true, // 自動的にindexファイルを開く
+    hot: true, //変更したファイルに関連する部品のみを読み込む
   },
   module: {
     rules: [
