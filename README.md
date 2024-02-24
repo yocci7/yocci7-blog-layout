@@ -15,7 +15,7 @@ $ find ./src/pug -type f -not -path '*/_*' -name '*.pug' -exec pug -w {} -o ./di
 #### npm
 ``` bash
 $ npm init -y
-  npm install --save-dev ts-loader typescript webpack webpack-cli webpack-dev-server
+  npm install --save-dev webpack webpack-cli webpack-dev-server ts-loader typescript
 ```
 
 #### scripts
