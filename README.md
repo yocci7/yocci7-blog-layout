@@ -1,6 +1,5 @@
-# YOCCI_ii7 BLOG
-
 [![logo](https://github.com/yocci7/yocci7_blog/assets/149352152/6b200b3b-c47a-4fce-a417-679dfb7ee296)](https://yocci7-blog.vercel.app)
+---
 
 ### 開発用メモ
 
