@@ -1,24 +1,29 @@
 # YOCCI_ii7 BLOG
 
 
+### 開発用メモ
+
 #### Pug Watch
 ```bash
-find ./src/pug -type f -not -path '*/_*' -name '*.pug' -exec pug -w {} -o ./dist -P \; & pug -w ./src/pug/page -o ./dist/page -P
-
-```
-#### Webpack Server
-```bash
-npm start
+$ find ./src/pug -type f -not -path '*/_*' -name '*.pug' -exec pug -w {} -o ./dist -P \; & pug -w ./src/pug/page -o ./dist/page -P
 ```
 
-#### build
-```bash
-npm run build
+#### npm
+``` baash
+$ npm init -y
+  npm install --save-dev ts-loader typescript webpack webpack-cli webpack-dev-server
 ```
 
-#### build -W
+#### scripts
 ```bash
-npm run watch
+# Webpack Server
+$ npm start
+
+# build
+$ npm run build
+
+# build -W
+$ npm run watch
 ```
 
 #### Directory Structure
