@@ -1,4 +1,4 @@
-//- find ./src/pug -type f -name '*.pug' | grep -v '/_' | xargs pug -w -o ./dist -P
+//- find ./src/pug -type f -not -path '*/_*' -name '*.pug' -exec pug -w {} -o ./dist -P \; & pug -w ./src/pug/page -o ./dist/page -P
 doctype html
 html(lang="ja")
   head(prefix="og: https://-ogp.me/ns#")
@@ -16,7 +16,7 @@ html(lang="ja")
     link(rel="stylesheet", href="./common/css/article.css")
 
     //- JS
-    script(src="./common/js/script.js")
+    script(src="./common/js/bundle.js")
 
   body
     //- HEADER

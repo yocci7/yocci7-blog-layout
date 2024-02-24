@@ -14,8 +14,13 @@ html(lang="ja")
     link(rel="stylesheet", href="../../common/css/app.css")
 
     //- JS
-    script(src="../../common/js/script.js")
+    script(src="../../common/js/bundle.js")
 
   body
     //- HEADER
     include ../../_include/_header.pug
+
+    //- MAIN
+    main.main
+      //- SIDE_BAR
+      include ../../_include/_sidebar.pug
