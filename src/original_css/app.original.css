@@ -276,6 +276,7 @@ body {
 }
 .sidebar .recentArticle__item__contents__section__text__headline {
   position: relative;
+  text-decoration-line: none !important;
   top: 30px;
   right: 0px;
   font-size: 15px;
