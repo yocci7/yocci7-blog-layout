@@ -55,7 +55,7 @@ class RecentArticleRenderer {
    * @returns 画像のHTML要素
    */
   private generateImageHTML(imgSrc: string): string {
-    return `<img class="recentArticle__item__contents__section__img" src="${imgSrc}"/>`;
+    return `<img class="recentArticle__item__contents__section__img" src="../../${imgSrc}"/>`;
   }
 
   // generateHeadlineHTML: 見出しのHTMLを生成

@@ -54,7 +54,7 @@ class ArticleRenderer {
    * @returns 画像のHTML要素
    */
   private generateImageHTML(imgSrc: string): string {
-    return `<img class="article__item__section__img" src="${imgSrc}"/>`;
+    return `<img class="article__item__section__img" src="./${imgSrc}"/>`;
   }
 
   // generateHeadlineHTML: 見出しのHTMLを生成
