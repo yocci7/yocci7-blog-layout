@@ -15,7 +15,7 @@ $ find ./src/pug -type f -not -path '*/_*' -name '*.pug' -exec pug -w {} -o ./di
 #### npm
 ``` bash
 $ npm init -y
-  npm install --save-dev webpack webpack-cli webpack-dev-server ts-loader typescript
+  npm install --save-dev webpack webpack-cli webpack-dev-server ts-loader typescript @types/jquery
 ```
 
 #### scripts
@@ -39,11 +39,13 @@ C:.
 │  │  ├─css
 │  │  └─js
 │  ├─img
+│  ├─json
 │  └─page
 │      ├─about
 │      ├─contact
 │      └─news
 ├─node_modules
+│  ├─ ...
 └─src
     ├─original_css
     ├─pug

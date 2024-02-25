@@ -1,30 +1,31 @@
-// webpack.config.js
+const path = require('path');
 
 module.exports = {
   entry: {
-    bundle: "./src/ts/app.ts",
+    bundle: './src/ts/app.ts',
   },
   output: {
-    path: `${__dirname}/dist/common/js`,
-    filename: "bundle.js",
+    path: path.resolve(__dirname, 'dist/common/js'),
+    filename: 'bundle.js',
   },
-  mode: "development",
-  // mode: "production",
+  // mode: 'development',
+  mode: 'production',
   resolve: {
     extensions: ['.js', '.ts', '.jsx', '.json'],
   },
   devServer: {
     static: {
-      directory: `${__dirname}/dist`,
+      directory: path.join(__dirname, 'dist'),
     },
-    open: true, // 自動的にindexファイルを開く
-    hot: true, //変更したファイルに関連する部品のみを読み込む
+    open: true,
+    hot: true,
   },
   module: {
     rules: [
       {
-        test: /\.ts$/,
-        loader: "ts-loader",
+        test: /\.ts$/, // .tsをコンパイルする
+        use: 'ts-loader',
+        exclude: /node_modules/,
       },
     ],
   },

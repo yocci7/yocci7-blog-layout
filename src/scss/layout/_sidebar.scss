@@ -1,11 +1,11 @@
 .sidebar {
-  flex: 1 1 30%;
-  margin-left: 2%;
+  flex: 1 1 20%;
+  margin-left: 5%;
   min-width: 350px;
 
   &__search {
     display: flex;
-    position: fixed;
+    // position: fixed;
     top: 102px;
 
     &__input {
@@ -41,9 +41,9 @@
     }
   }
 
-  &__article__filter {
+  &__filter {
     margin: 5px 0;
-    position: fixed;
+    // position: fixed;
     top: 155.6px;
 
     &__name {
@@ -71,13 +71,86 @@
     }
   }
 
+  .recentArticle {
+    width: auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px #00000080;
+    margin-top: 20px;
+    width: 288px;
+    border-radius: 20px;
+    position: absolute;
+
+    &__title {
+      background-color: #ecdcb2;
+      color: #c29523;
+      font-size: 25px;
+      padding: 10px;
+      text-align: center;
+      letter-spacing: 1px;
+      border-radius: 20px 20px 0  0;
+      width: 288px;
+    }
+
+    &__item {
+      width: 288px;
+      background-color: #fff;
+      transition: all 0.3s;
+      margin: 5px 0;
+      transition: all 0.3s;
+      border-radius: 20px;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+        transition: all .3s;
+      }
+
+      &__contents {
+        width: 200px;
+        padding: 0px 0;
+        text-align: center;
+
+        &__section {
+          display: flex;
+
+
+          &__img {
+            width: 128px;
+            height: 72px;
+            margin: 10px;
+            border-radius: 5px;
+          }
+
+          &__text {
+            &__headline {
+              position: relative;
+              top: 30px;
+              right: 0px;
+              font-size: 15px;
+              color: #000;
+              width: 130px;
+              overflow-wrap: anywhere;
+            }
+
+            &__dataPublished {
+              position: relative;
+              top: 40px;
+              right: 0px;
+              font-size: 12px;
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+
   &__link {
     width: 305px;
     height: auto;
     border-radius: 20px;
-    position: fixed;
+    // position: fixed;
     top: 229.6px;
-
     &__caption {
       font-size: 25px;
       margin: 10px 0;
@@ -88,7 +161,6 @@
     &__ul {
       list-style: none;
       margin: 0 0 20px;
-
       a {
         text-decoration-line: none;
         color: #444444;
@@ -99,7 +171,6 @@
         font-weight: bold;
         position: relative;
         transition: .5s ease 0s;
-
         &::after {
           position: absolute;
           content: "";
@@ -117,8 +188,6 @@
           cursor: pointer;
           // margin: 20px;
           transition: all .5s;
-
-
           &::after {
             width: 100%;
           }
@@ -127,3 +196,4 @@
     }
   }
 }
+
