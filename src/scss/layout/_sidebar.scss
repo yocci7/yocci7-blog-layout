@@ -5,8 +5,8 @@
 
   &__search {
     display: flex;
-    // position: fixed;
-    top: 102px;
+    position: fixed;
+    top: 130px;
 
     &__input {
       width: 230px;
@@ -42,7 +42,7 @@
   }
 
   &__filter {
-    margin: 5px 0;
+    margin: 5px;
     // position: fixed;
     top: 155.6px;
 
@@ -53,11 +53,12 @@
       border: none;
       border-radius: 8px;
     }
-    & button {
+    &__button {
       background-color: #fff;
       color: #000;
       font-size: 12px;
-      padding: 10px 15px;
+      padding: 10px 12px;
+      margin: 0 5px;
       border: none;
       border-radius: 8px;
       transition: all 0.3s;
@@ -72,14 +73,9 @@
   }
 
   .recentArticle {
-    width: auto;
-    background-color: #fff;
-    box-shadow: 0px 0px 20px #00000080;
-    margin-top: 20px;
-    width: 288px;
-    border-radius: 20px;
-    position: absolute;
-
+    position: fixed;
+    top:  200px;
+    width: 296px;
     &__title {
       background-color: #ecdcb2;
       color: #c29523;
@@ -88,58 +84,34 @@
       text-align: center;
       letter-spacing: 1px;
       border-radius: 20px 20px 0  0;
-      width: 288px;
+      width: 296px;
     }
-
     &__item {
-      width: 288px;
-      background-color: #fff;
-      transition: all 0.3s;
-      margin: 5px 0;
-      transition: all 0.3s;
-      border-radius: 20px;
 
-      &:hover {
-        cursor: pointer;
-        opacity: 0.5;
-        transition: all .3s;
+      a {
+        text-decoration: none;
       }
 
-      &__contents {
-        width: 200px;
-        padding: 0px 0;
-        text-align: center;
+      &__section {
+        display: flex;
 
-        &__section {
-          display: flex;
+        &__img {
+          width: 50%;
+          height: 50%;
+        }
 
+        &__text {
 
-          &__img {
-            width: 128px;
-            height: 72px;
-            margin: 10px;
-            border-radius: 5px;
+          &__headline {
+            color: #000;
           }
 
-          &__text {
-            &__headline {
-              position: relative;
-              text-decoration-line: none !important;
-              top: 30px;
-              right: 0px;
-              font-size: 15px;
-              color: #000;
-              width: 130px;
-              overflow-wrap: anywhere;
-            }
+          &__description {
+            color: #000;
+          }
 
-            &__dataPublished {
-              position: relative;
-              top: 40px;
-              right: 0px;
-              font-size: 12px;
-              color: #000;
-            }
+          &__dataPublished {
+            color: #000;
           }
         }
       }

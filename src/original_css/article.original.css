@@ -23,7 +23,7 @@
   background-color: #fff;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5019607843);
   border-radius: 25px;
-  margin: 25px;
+  margin: 20px;
   transition: all 0.3s;
 }
 .article__item__section:hover {

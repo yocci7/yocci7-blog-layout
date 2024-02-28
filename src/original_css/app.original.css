@@ -113,13 +113,6 @@ body {
   background-color: #eec968;
   height: 50px;
   padding: 10px 0;
-  margin: 0 auto 0 auto;
-  font-size: 2rem;
-  font-weight: bold;
-}
-.header__nav__top a {
-  text-decoration: none;
-  color: #000;
 }
 .header__nav__top__logo {
   width: 223px;
@@ -129,12 +122,12 @@ body {
 }
 .header__nav__ul {
   margin-bottom: 50px;
-  margin: 16px;
+  margin: 20px 0;
 }
 .header__nav__ul__li {
   display: inline-block;
-  margin: 0 26px;
-  font-size: 18px;
+  margin: 0 25px;
+  font-size: 16px;
   font-weight: 600;
 }
 .header__nav__ul__li a {
@@ -171,7 +164,8 @@ body {
 }
 .sidebar__search {
   display: flex;
-  top: 102px;
+  position: fixed;
+  top: 130px;
 }
 .sidebar__search__input {
   width: 230px;
@@ -203,7 +197,7 @@ body {
   transition: all 0.5s;
 }
 .sidebar__filter {
-  margin: 5px 0;
+  margin: 5px;
   top: 155.6px;
 }
 .sidebar__filter__name {
@@ -213,29 +207,26 @@ body {
   border: none;
   border-radius: 8px;
 }
-.sidebar__filter button {
+.sidebar__filter__button {
   background-color: #fff;
   color: #000;
   font-size: 12px;
-  padding: 10px 15px;
+  padding: 10px 12px;
+  margin: 0 5px;
   border: none;
   border-radius: 8px;
   transition: all 0.3s;
 }
-.sidebar__filter button:hover {
+.sidebar__filter__button:hover {
   cursor: pointer;
   background-color: #000;
   color: #fff;
   transition: all 0.6s;
 }
 .sidebar .recentArticle {
-  width: auto;
-  background-color: #fff;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5019607843);
-  margin-top: 20px;
-  width: 288px;
-  border-radius: 20px;
-  position: absolute;
+  position: fixed;
+  top: 200px;
+  width: 296px;
 }
 .sidebar .recentArticle__title {
   background-color: #ecdcb2;
@@ -245,50 +236,25 @@ body {
   text-align: center;
   letter-spacing: 1px;
   border-radius: 20px 20px 0 0;
-  width: 288px;
+  width: 296px;
 }
-.sidebar .recentArticle__item {
-  width: 288px;
-  background-color: #fff;
-  transition: all 0.3s;
-  margin: 5px 0;
-  transition: all 0.3s;
-  border-radius: 20px;
+.sidebar .recentArticle__item a {
+  text-decoration: none;
 }
-.sidebar .recentArticle__item:hover {
-  cursor: pointer;
-  opacity: 0.5;
-  transition: all 0.3s;
-}
-.sidebar .recentArticle__item__contents {
-  width: 200px;
-  padding: 0px 0;
-  text-align: center;
-}
-.sidebar .recentArticle__item__contents__section {
+.sidebar .recentArticle__item__section {
   display: flex;
 }
-.sidebar .recentArticle__item__contents__section__img {
-  width: 128px;
-  height: 72px;
-  margin: 10px;
-  border-radius: 5px;
+.sidebar .recentArticle__item__section__img {
+  width: 50%;
+  height: 50%;
 }
-.sidebar .recentArticle__item__contents__section__text__headline {
-  position: relative;
-  text-decoration-line: none !important;
-  top: 30px;
-  right: 0px;
-  font-size: 15px;
+.sidebar .recentArticle__item__section__text__headline {
   color: #000;
-  width: 130px;
-  overflow-wrap: anywhere;
 }
-.sidebar .recentArticle__item__contents__section__text__dataPublished {
-  position: relative;
-  top: 40px;
-  right: 0px;
-  font-size: 12px;
+.sidebar .recentArticle__item__section__text__description {
+  color: #000;
+}
+.sidebar .recentArticle__item__section__text__dataPublished {
   color: #000;
 }
 .sidebar__link {

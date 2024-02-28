@@ -49,12 +49,10 @@ class ArticleRenderer {
   }
 
   // generateImageHTML: 画像のHTMLを生成
-  /**
-   * @param imgSrc - 画像のURL
-   * @returns 画像のHTML要素
-   */
   private generateImageHTML(imgSrc: string): string {
-    return `<img class="article__item__section__img" src="./${imgSrc}"/>`;
+    // Assuming imgSrc is the path provided in the article.json
+    const fullPath = `https://yocci7-blog.vercel.app/img/article/${imgSrc}`;
+    return `<img class="recentArticle__item__section__img" src="${fullPath}"/>`;
   }
 
   // generateHeadlineHTML: 見出しのHTMLを生成
