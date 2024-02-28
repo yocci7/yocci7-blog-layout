@@ -196,37 +196,17 @@ body {
   color: #fff;
   transition: all 0.5s;
 }
-.sidebar__filter {
-  margin: 5px;
-  top: 155.6px;
-}
-.sidebar__filter__name {
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px 0 5px;
-  border: none;
-  border-radius: 8px;
-}
-.sidebar__filter__button {
-  background-color: #fff;
-  color: #000;
-  font-size: 12px;
-  padding: 10px 12px;
-  margin: 0 5px;
-  border: none;
-  border-radius: 8px;
-  transition: all 0.3s;
-}
-.sidebar__filter__button:hover {
-  cursor: pointer;
-  background-color: #000;
-  color: #fff;
-  transition: all 0.6s;
-}
 .sidebar .recentArticle {
+  margin-top: 10px;
   position: fixed;
   top: 200px;
   width: 296px;
+  height: 355px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5019607843);
+  border-radius: 25px;
+  transition: all 0.3s;
 }
 .sidebar .recentArticle__title {
   background-color: #ecdcb2;
@@ -238,6 +218,19 @@ body {
   border-radius: 20px 20px 0 0;
   width: 296px;
 }
+.sidebar .recentArticle__item {
+  margin: 10px 5%;
+  padding: 10px;
+  background-color: #fff;
+}
+.sidebar .recentArticle__item:hover .recentArticle__item__section__img {
+  transform: scale(1.1, 1.1);
+  transition: all 0.3s ease-in-out;
+}
+.sidebar .recentArticle__item:hover .recentArticle__item__section__text {
+  opacity: 0.6;
+  transition: all 0.3s;
+}
 .sidebar .recentArticle__item a {
   text-decoration: none;
 }
@@ -245,65 +238,27 @@ body {
   display: flex;
 }
 .sidebar .recentArticle__item__section__img {
-  width: 50%;
-  height: 50%;
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s ease-in-out;
 }
-.sidebar .recentArticle__item__section__text__headline {
-  color: #000;
-}
-.sidebar .recentArticle__item__section__text__description {
-  color: #000;
-}
-.sidebar .recentArticle__item__section__text__dataPublished {
-  color: #000;
-}
-.sidebar__link {
-  width: 305px;
-  height: auto;
-  border-radius: 20px;
-  top: 229.6px;
-}
-.sidebar__link__caption {
-  font-size: 25px;
-  margin: 10px 0;
-  left: 25px;
-  font-weight: bold;
-  position: relative;
-}
-.sidebar__link__ul {
-  list-style: none;
-  margin: 0 0 20px;
-}
-.sidebar__link__ul a {
-  text-decoration-line: none;
-  color: #444444;
-  display: inline-block;
-  font-size: 25px;
-  margin: 10px;
-  left: 15px;
-  font-weight: bold;
-  position: relative;
-  transition: 0.5s ease 0s;
-}
-.sidebar__link__ul a::after {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 50%;
-  top: 120%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 2px;
-  background: #000;
-  transition: 0.5s ease 0s;
-}
-.sidebar__link__ul a:hover {
-  color: #000;
-  cursor: pointer;
+.sidebar .recentArticle__item__section__text {
   transition: all 0.5s;
 }
-.sidebar__link__ul a:hover::after {
-  width: 100%;
+.sidebar .recentArticle__item__section__text__headline {
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+  white-space: nowrap;
+}
+.sidebar .recentArticle__item__section__text__description {
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  white-space: break-word;
+  margin: 10px;
 }
 
 .footer {

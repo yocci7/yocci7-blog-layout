@@ -4,7 +4,6 @@ interface Article {
   img: string;          // 記事の画像のURL
   headline: string;     // 記事の見出し
   description: string;  // 記事の説明文
-  dataPublished: string; // 記事の公開日
 }
 
 // RecentArticleRendererクラス: 記事データをHTML要素としてレンダリングするクラス
@@ -28,7 +27,8 @@ class RecentArticleRenderer {
         articleElement.classList.add('recentArticle__item');
 
         const imgSrc = article.img.trim() !== '' ? article.img : 'https://placehold.jp/256x144.png';
-        const shortenedDescription = this.truncateDescription(article.description, 20);
+
+        const shortenedDescription = this.truncateDescription(article.description, 40);
 
         articleElement.innerHTML = `
           <a href="${article.link}">
@@ -37,7 +37,6 @@ class RecentArticleRenderer {
               <div class="recentArticle__item__section__text">
                 ${this.generateHeadlineHTML(article.headline)}
                 ${this.generateDescriptionHTML(shortenedDescription)}
-                ${this.generateDataPublishedHTML(article.dataPublished)}
               </div>
             </section>
           </a>
@@ -79,11 +78,6 @@ class RecentArticleRenderer {
   // generateDescriptionHTML: 説明文のHTMLを生成
   private generateDescriptionHTML(description: string): string {
     return description.trim() !== '' ? `<p class="recentArticle__item__section__text__description">${description}</p>` : '';
-  }
-
-  // generateDataPublishedHTML: 公開日のHTMLを生成
-  private generateDataPublishedHTML(dataPublished: string): string {
-    return dataPublished.trim() !== '' ? `<p class="recentArticle__item__section__text__dataPublished">${dataPublished}</p>` : '';
   }
 }
 

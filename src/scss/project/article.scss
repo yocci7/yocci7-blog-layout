@@ -58,8 +58,9 @@
         &__description {
           margin: 5px 20px 0;
           text-align: center;
-          font-size: 15px;
+          font-size: 14px;
           line-height: 20px;
+          white-space: break-word;
         }
 
         &__dataPublished {

@@ -52,7 +52,7 @@ class ArticleRenderer {
   private generateImageHTML(imgSrc: string): string {
     // Assuming imgSrc is the path provided in the article.json
     const fullPath = `https://yocci7-blog.vercel.app/img/article/${imgSrc}`;
-    return `<img class="recentArticle__item__section__img" src="${fullPath}"/>`;
+    return `<img class="article__item__section__img" src="${fullPath}"/>`;
   }
 
   // generateHeadlineHTML: 見出しのHTMLを生成
