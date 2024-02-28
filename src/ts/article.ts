@@ -2,6 +2,7 @@
 interface Article {
   link: string;             // 記事へのリンク
   img: string;              // 記事の画像のURL
+  tag: string;              // 記事のタグ
   headline: string;         // 記事の見出し
   description: string;      // 記事の説明文
   dataPublished: string;    // 記事の公開日
@@ -28,15 +29,17 @@ class ArticleRenderer {
         const articleElement = document.createElement('div');
         articleElement.classList.add('article__item');
 
-        const imgSrc = article.img.trim() !== '' ? article.img : 'https://placehold.jp/256x144.png';
+        const imgSrc = article.img.trim();
+
+        const shortenedDescription = this.truncateDescription(article.description, 32);
 
         articleElement.innerHTML = `
           <a href="${article.link}">
             <section class="article__item__section">
-              ${this.generateImageHTML(imgSrc)}
+              ${this.generateImageHTML(imgSrc, article.tag)}
               <div class="article__item__section__text">
                 ${this.generateHeadlineHTML(article.headline)}
-                ${this.generateDescriptionHTML(article.description)}
+                ${this.generateDescriptionHTML(shortenedDescription)}
                 ${this.generateDataPublishedHTML(article.dataPublished)}
               </div>
             </section>
@@ -48,11 +51,24 @@ class ArticleRenderer {
     }
   }
 
+  // 説明文を指定した文字数で切り詰めるユーティリティ関数
+  private truncateDescription(description: string, maxLength: number): string {
+    if (description.length <= maxLength) {
+      return description;
+    }
+
+    const truncatedText = description.substring(0, maxLength - 3).trim() + '...';
+    return truncatedText;
+  }
+
   // generateImageHTML: 画像のHTMLを生成
-  private generateImageHTML(imgSrc: string): string {
+  private generateImageHTML(imgSrc: string, tag: string): string {
     // Assuming imgSrc is the path provided in the article.json
     const fullPath = `https://yocci7-blog.vercel.app/img/article/${imgSrc}`;
-    return `<img class="article__item__section__img" src="${fullPath}"/>`;
+    return `
+      <img class="article__item__section__img" src="${fullPath}"/>
+      <p class="article__item__section__tag">${tag}</p>
+    `;
   }
 
   // generateHeadlineHTML: 見出しのHTMLを生成
@@ -84,4 +100,3 @@ class ArticleRenderer {
 }
 
 export default ArticleRenderer;
-

@@ -19,6 +19,12 @@
   }
 
   &__item {
+    position: relative;
+
+    a {
+      text-decoration: none;
+    }
+
     &__section {
       width: 256px;
       height: 244px;
@@ -42,11 +48,20 @@
         border-radius: 25px 25px 0 0;
       }
 
+      &__tag {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: #fff;
+        font-size: 12px;
+        background-color: #c29523;
+        border-radius: 20px;
+        padding: 8px 10px;
+      }
+
       &__text {
         display: flexbox;
-        position: absolute;
         width: 256px;
-        text-decoration: none;
         color: #000;
 
         &__headline {
@@ -56,11 +71,12 @@
         }
 
         &__description {
-          margin: 5px 20px 0;
+          margin: 5px 5% 0;
           text-align: center;
           font-size: 14px;
           line-height: 20px;
           white-space: break-word;
+          font-weight: 500;
         }
 
         &__dataPublished {

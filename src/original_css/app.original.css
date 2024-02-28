@@ -93,6 +93,10 @@ body {
   overflow-x: hidden;
 }
 
+.header__nav__ul__li {
+  font-family: Montserrat, sans-serif;
+}
+
 .main {
   display: flex;
   position: relative;
@@ -131,7 +135,6 @@ body {
   font-weight: 600;
 }
 .header__nav__ul__li a {
-  font-family: Montserrat, sans-serif;
   text-decoration-line: none;
   color: #444444;
   display: inline-block;

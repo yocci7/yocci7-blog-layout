@@ -26,9 +26,9 @@ class RecentArticleRenderer {
         const articleElement = document.createElement('div');
         articleElement.classList.add('recentArticle__item');
 
-        const imgSrc = article.img.trim() !== '' ? article.img : 'https://placehold.jp/256x144.png';
+        const imgSrc = article.img.trim();
 
-        const shortenedDescription = this.truncateDescription(article.description, 40);
+        const shortenedDescription = this.truncateDescription(article.description, 24);
 
         articleElement.innerHTML = `
           <a href="${article.link}">
@@ -47,35 +47,29 @@ class RecentArticleRenderer {
     }
   }
 
-  // 単語で指定した文字数で切り詰めるユーティリティ関数
+  // 説明文を指定した文字数で切り詰めるユーティリティ関数
   private truncateDescription(description: string, maxLength: number): string {
-    const words = description.split(' ');
-    let truncatedDescription = '';
-
-    for (const word of words) {
-      if ((truncatedDescription + word).length <= maxLength) {
-        truncatedDescription += ` ${word}`;
-      } else {
-        break;
-      }
+    if (description.length <= maxLength) {
+      return description;
     }
 
-    return truncatedDescription.trim() + '...';
+    const truncatedText = description.substring(0, maxLength - 3).trim() + '...';
+    return truncatedText;
   }
 
-  // generateImageHTML: 画像のHTMLを生成
+  // 画像のHTMLを生成
   private generateImageHTML(imgSrc: string): string {
-    // Assuming imgSrc is the path provided in the article.json
+    // imgSrcはarticle.jsonで提供されたパスと仮定しています
     const fullPath = `https://yocci7-blog.vercel.app/img/article/${imgSrc}`;
     return `<img class="recentArticle__item__section__img" src="${fullPath}"/>`;
   }
 
-  // generateHeadlineHTML: 見出しのHTMLを生成
+  // 見出しのHTMLを生成
   private generateHeadlineHTML(headline: string): string {
     return headline.trim() !== '' ? `<h4 class="recentArticle__item__section__text__headline">${headline}</h4>` : '';
   }
 
-  // generateDescriptionHTML: 説明文のHTMLを生成
+  // 説明文のHTMLを生成
   private generateDescriptionHTML(description: string): string {
     return description.trim() !== '' ? `<p class="recentArticle__item__section__text__description">${description}</p>` : '';
   }
