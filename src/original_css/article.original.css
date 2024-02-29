@@ -1,7 +1,6 @@
 @charset "UTF-8";
 .article {
   flex: 1 1 70%;
-  margin-right: 5%;
   display: flex;
   text-align: center;
   justify-content: center;
